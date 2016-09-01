@@ -28,5 +28,5 @@ io.on('connection', function(socket) {
     socket.on('i am client', console.log);
 });
 
-//app.listen(process.env.port); //User Heroku's port
-app.listen(3000);
+app.listen(process.env.port); //User Heroku's port
+//app.listen(3000);
