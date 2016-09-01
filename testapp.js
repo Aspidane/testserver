@@ -31,6 +31,6 @@ io.on('connection', function(socket) {
     socket.on('i am client', console.log);
 });
 
-console.log("\nPort:"+process.env.port+"\n")
+console.log("\nPort:"+process.env.PORT+"\n")
 app.listen(process.env.port); //User Heroku's port
 //app.listen(3000);
