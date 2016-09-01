@@ -1,3 +1,5 @@
+console.log("\n\nHELLO WORLD\n\n");
+
 var http = require('http'),
     fs = require('fs'),
     // NEVER use a Sync function except at start-up!
