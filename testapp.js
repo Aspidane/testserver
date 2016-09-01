@@ -1,4 +1,5 @@
 console.log("\n\nHELLO WORLD\n\n");
+console.log("\n\n"+__dirname+"\n\n");
 
 var http = require('http'),
     fs = require('fs'),
@@ -30,5 +31,6 @@ io.on('connection', function(socket) {
     socket.on('i am client', console.log);
 });
 
+console.log("\nPort:"+process.env.port+"\n")
 app.listen(process.env.port); //User Heroku's port
 //app.listen(3000);
